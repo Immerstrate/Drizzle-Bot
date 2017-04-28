@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
 
 const token = "MzA0ODA0Njg1MTU4NTQ3NDU2.C-JuLw.CHKq2RSAS5EgSkoskUOpQ_jXdkI";
-const prefix = "?";
+const prefix = "!";
 
 function generateHex() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -96,7 +96,19 @@ bot.on("message", function(message) {
         case "drizzle":
             message.channel.sendMessage("Well, well, well, LOOK at what has happened. LOOK who's locked out... IN THE DRIZZLE! WHERE'S YOUR PONCHO NOW!?!");
             break;
-
+        
+        case "🔥":
+            message.channel.sendMessage("http://www.reactiongifs.com/wp-content/uploads/2013/06/supa-hot-fire.gif");
+            break;
+        
+        case "🔥 ":
+            message.channel.sendMessage("http://www.reactiongifs.com/wp-content/uploads/2013/06/supa-hot-fire.gif");
+            break;
+        
+        case "selfDestruct":
+            message.delete();
+            break;
+        
         // case "test":
         //     message.channel.sendMessage(message.guild.members.array());
         //     console.log(message.guild.members.array());
